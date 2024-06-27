@@ -43,7 +43,7 @@ body:
       label: Support Data
       description: If the issue is related to one (or more) specific endpoints, please provide the *Support information* that is found on the endpoint details page. Click "Copy" and paste the result here.
       render: json
-      placeholder: |>
+      placeholder: |
         {
             "application_id": "e2c4ce69-11e9-11ef-a875-c29f3399dfd2",
             "version_id": "4c13a5c3-11ea-11ef-a875-c29f3399dfd2",
