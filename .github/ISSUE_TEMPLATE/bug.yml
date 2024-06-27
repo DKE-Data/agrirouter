@@ -1,0 +1,58 @@
+name: Bug Report
+description: File a bug report.
+title: "[Bug] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: dropdown
+    id: sdk
+    attributes:
+      label: agrirouter SDK
+      description: Which agrirouter SDK are you using (please provide if not a UI issue)?
+      options:
+        - None
+        - Java
+        - C#/.NET
+        - Python
+        - PHP
+        - C++
+      default: 0
+  - type: textarea
+    id: endpointIds
+    attributes:
+      label: Support Data
+      description: If the issue is related to one (or more) specific endpoints, please provide the *Support information* that is found on the endpoint details page. Click "Copy" and paste the result here.
+      render: json
+      placeholder: |>
+        {
+            "application_id": "e2c4ce69-11e9-11ef-a875-c29f3399dfd2",
+            "version_id": "4c13a5c3-11ea-11ef-a875-c29f3399dfd2",
+            "account_id": "0c2bf4bb-453e-428b-b787-2d0c3225d054",
+            "endpoint_id": "5d94ba43-eeed-4c47-a6db-b21cd3c9c1e4",
+            "endpoint_external_id": "QA-TP-1"
+        }
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Please provide any other information we might need to understand and/or reproduce the issue.
