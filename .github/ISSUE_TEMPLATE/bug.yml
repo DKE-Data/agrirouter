@@ -30,7 +30,7 @@ body:
       label: agrirouter SDK
       description: Which agrirouter SDK are you using (please provide if not a UI issue)?
       options:
-        - None
+        - No SDK
         - Java
         - C#/.NET
         - Python
